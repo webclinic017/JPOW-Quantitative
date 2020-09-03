@@ -1,0 +1,52 @@
+#myInput {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 25%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #e78300;
+  margin-bottom: 12px;
+  background-color: #202225;
+  color: white;
+  text-align: center;
+  border-radius: 16pt;
+  margin-top: 20px;
+}
+
+#myInput:focus{
+  outline: none;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 75%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+  text-align: center;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+  background-color: #202225;
+}
+
+#myTable th{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #e78300;
+  color: black;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#scrollable{
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 70%;
+}

@@ -1,0 +1,90 @@
+body, html{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #202225;
+  height: 100%;
+  color: red;
+}
+
+button:focus {outline:0;}
+
+.bg-light{
+  background-color: #202225 !important;
+  border-bottom: 1px solid white;
+}
+
+.navbar-toggler{
+  width: 50px;
+  border: 0;
+}
+
+ul > li i{
+  color: orange;
+}
+
+ul > li{
+  padding-right: 10px;
+}
+
+ul span{
+  color: white;
+}
+
+li button{
+  background-color: #202225;
+  border: 0;
+}
+
+.modal{
+  background-color: #202225 !important;
+  height: 60%;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #e78300;
+}
+
+.modal-content{
+  background-color: #202225;
+  border: 0;
+  text-align: center;
+}
+
+table{
+  margin: 0 auto;
+  width: 100%;
+}
+
+input{
+  background-color: #202225;
+  color: #e78300;
+  border: 1px solid #0000EE;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input:focus{outline:0;}
+
+h4{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+.but{
+  text-align: center;
+  width: 250px;
+  height: 50px;;
+  border-radius: 100px;
+  background-color: #e78300;
+  border: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.but:hover{
+  background-color: #202225;
+  border: 2px solid white;
+}

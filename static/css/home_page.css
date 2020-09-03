@@ -1,0 +1,88 @@
+h1{
+  color: #e78300;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+h5{
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.3rem;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 10s;
+}
+
+#edge{
+  color: #e78300;
+}
+
+h2{
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 0.2rem;
+}
+
+#signup2{
+  text-align: center;
+  margin-left: 15%;
+  width: 250px;
+  height: 50px;;
+  border-radius: 100px;
+  background-color: #3a3a3a;
+  border: 0;
+  margin-top: 30px;
+}
+
+#signup2:hover{
+  background-color: #202225;
+  border: 2px solid white;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+#main-block{
+  margin-top: 15%;
+}
+
+.container .left-div{
+  float: left;
+}
+
+.container .right-div{
+  float: right;
+}
+
+#learn-more{
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .container > div {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}

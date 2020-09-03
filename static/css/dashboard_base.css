@@ -1,0 +1,19 @@
+body, html{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #202225;
+  height: 100%;
+  color: white;
+}
+
+.bg-light{
+  background-color: #202225 !important;
+  border-bottom: 1px solid #e78300;
+}
+
+ul li{
+  margin-right: 30px;
+}
+
+#home{
+  color: #e78300 !important;
+}

@@ -1,0 +1,24 @@
+.container{
+  margin-top: 10px;
+}
+
+h1{
+  color: #e78300;
+}
+
+hr{
+  border: 1px solid #ddd;
+}
+
+.jumbotron{
+  background-color: rgba(0,0,0,.3);
+  position: relative
+}
+
+.info{
+  color: #3a3a3a;
+}
+
+.explain{
+  color: white;
+}

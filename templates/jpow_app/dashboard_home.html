@@ -1,0 +1,33 @@
+{% extends "jpow_app/dashboard_base.html" %}
+
+{% load static %}
+
+{% block extraLinks %}
+  <link rel="stylesheet" href= "{% static "css/dashboard_home.css" %}">
+{% endblock %}
+
+
+{% block page %}
+<div id = "group" class="container-fluid">
+  <a href="/retailSentiment">
+    <div id = "retail-sentiment" class="module">
+      <h1>Retail Sentiment</h1>
+    </div>
+  </a>
+  <a href="/insiderTrading">
+    <div id = "insider-trading" class="module">
+      <h1>Insider Trading</h1>
+    </div>
+  </a>
+  <a href="/ceoCompensation">
+    <div id = "ceo-comp" class="module">
+      <h1>CEO Compensation</h1>
+    </div>
+  </a>
+  <a href="/unusualActivity">
+    <div id = "options" class="module">
+      <h1>Unusual Options Activity</h1>
+    </div>
+  </a>
+</div>
+{% endblock %}

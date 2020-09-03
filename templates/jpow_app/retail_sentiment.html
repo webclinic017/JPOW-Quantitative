@@ -1,0 +1,22 @@
+{% extends "jpow_app/dashboard_base.html" %}
+
+{% load static %}
+
+{% block extraLinks %}
+  <link rel="stylesheet" href= "{% static "css/retail_sentiment.css" %}">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+{% endblock %}
+
+
+{% block page %}
+<h1><strong>POSITIVE RETAIL SENTIMENT</strong></h1>
+<h3 id = "last-update"><strong></strong></h3>
+<div class = "responsive-plot" id="sentgauge"></div>
+<div class = "responsive-plot" id="plot"></div>
+<script type="text/javascript">
+  var current_sentiment= JSON.parse('{{current_sentiment|safe}}');
+  var historical_sentiment= JSON.parse('{{historical_sentiment|safe}}');
+  var spy= JSON.parse('{{spy|safe}}');
+</script>
+<script src = "{% static "js/retail_sentiment.js" %}"></script>
+{% endblock %}

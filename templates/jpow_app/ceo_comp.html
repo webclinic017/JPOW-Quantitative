@@ -1,0 +1,16 @@
+{% extends "jpow_app/dashboard_base.html" %}
+
+{% load static %}
+
+{% block extraLinks %}
+  <link rel="stylesheet" href= "{% static "css/ceo_comp.css" %}">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js" charset="utf-8"></script>
+{% endblock %}
+
+{% block page %}
+<div class = "responsive-plot" id="plot"></div>
+<script type="text/javascript">
+  var data = JSON.parse('{{data|safe}}');
+</script>
+<script src = "{% static "js/ceo_comp.js" %}"></script>
+{% endblock %}

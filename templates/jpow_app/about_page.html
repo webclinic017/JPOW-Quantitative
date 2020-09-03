@@ -1,0 +1,54 @@
+{% extends "jpow_app/main_base.html" %}
+
+{% load static %}
+
+{% block extraLinks %}
+  <link rel="stylesheet" href= "{% static "css/about_page.css" %}">
+{% endblock %}
+
+{% block midpage %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Retail Sentiment</h1>
+    <p class = "info">Track daily retail sentiment against the performance of the S&P500</p>
+    <hr>
+    <p class = "explain">Commission free trading has made stock trading extremely popular among everyday persons. One of the most popular trading platforms, Robinhood, has over 13M users.
+      This page allows you to track the market sentiment of retail traders through a popular investing forum. Everyday,
+    comments are scraped and run through a one vs rest multinomial naive bayes classification model. The text classifer labels comments as bullish, bearish, or neutral.
+  The ratio of bullish comments to bearish comments is displayed as a gauge chart (indicating positive sentiment). The data is stored in a database so you can compare the
+forum sentiment to the price of the S&P500. The stock price is lagging compared to the sentiment, therefore, you can
+see if the sentiment was in the right or wrong direction after-the-fact and use the current forum sentiment to predict the movement of the S&P500 stock price.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Insider Trading</h1>
+    <p class = "info">See what moves our senators are making</p>
+    <hr>
+    <p class = "explain">The Stop Trading on Congressional Knowledge (STOCK) Act requires senators to report financial transactions.
+    Data is published at <a href = "https://efdsearch.senate.gov/search/home/">https://efdsearch.senate.gov/search/home/</a>.
+    Unfortunately, transactions are not published in real-time. Bi-weekly, data is scraped from the site and into a table to show sales and/or purchases of stocks and their amounts.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>CEO Compensation</h1>
+    <p class = "info">Who is worth their money</p>
+    <hr>
+    <p class = "explain">Visualize the highest performing CEOs of over 2000 companies by their YTD stock return.
+      The correlation coefficient is also displayed to measure the relationship between stock return and the ceo's salary.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Unusual Options Activity</h1>
+    <p class = "info">Track unusual volume on options contracts of over 2000 stocks</p>
+    <hr>
+    <p class = "explain">Everyday, options data is scraped and parsed to find options where the volume is greater than the open interest by atleast a set threshold value.</p>
+</div>
+
+{% endblock %}

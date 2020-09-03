@@ -1,0 +1,27 @@
+{% extends "jpow_app/main_base.html" %}
+
+{% load static %}
+
+{% block extraLinks %}
+  <link rel="stylesheet" href= "{% static "css/home_page.css" %}">
+{% endblock %}
+
+{% block midpage %}
+<div id = "main-block" class="container">
+  <div class="left-div">
+    <h5>Trader Smarter</h5>
+    <h1>USING OUR <br> FREE ALTERNATIVE <br> DATA PLATFORM</h1>
+    <button id = "signup2" type="button" data-toggle="modal" data-target="#signup">Sign Up</button>
+  </div>
+  <div class="right-div">
+    <h5 id = "edge">Gain an edge in the market</h5>
+    <h2>We scrape data from<br>
+      unorthodox and heterogenous<br>
+      data sources to provide<br>
+      real-time actionable<br>
+      insights for our users<br><h2>
+      <a id = "learn-more" href="/about">Learn More</a>
+  </div>
+</div>
+
+{% endblock %}
